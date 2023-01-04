@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    height: 90vh;
+    width: 65%;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "alias-img alias-top"
+    "alias-img alias-middle"
+    "alias-img alias-bottom";
+
+}
+
+.img-container {
+grid-area: alias-img;
+}
+
+.top-section {
+    grid-area: alias-top;
+
+}
+
+.middle-section {
+    grid-area: alias-middle;
+    
+}
+
+.bottom-section {
+    grid-area: alias-bottom;
+    
+}
