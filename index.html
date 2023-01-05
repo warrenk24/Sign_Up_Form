@@ -1,99 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>SignUpForm</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="grid-container">
-        <div class="hero-container">
-            <h1>CyberPunk</h1>
-            <p>Photo by <a href="https://unsplash.com/@leyy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leyre</a> on <a href="https://unsplash.com/photos/71SHXwBLp5w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </p>
+      <div class="hero-container">
+        <div class="hero-flex">
+          <div class="hero-text">
+            <h1>CyberPunk 2076</h1>
+          </div>
         </div>
-        <section class="top-section">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
-            <p>You know you want to.</p>
 
-        </section>
-        <section class="middle-section">
-            <h2>Let's do this!</h2>
-            <form class="form" id="form" action="randomPage.com" method="get">
-                <div class="left-form-section">
-                    <div class="form-control">
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name">
-                        <i class="fa-sharp fa-solid fa-exclamation"></i>
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                        <small>ERROR</small>
-
-                    </div>
-                    <div class="form-control">
-                        <label for="mail">EMAIL</label>
-                        <input type="email" name="mail" id="mail">
-                        <i class="fa-sharp fa-solid fa-exclamation"></i>
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                        <small>ERROR</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
-                        <i class="fa-sharp fa-solid fa-exclamation"></i>
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                        <small>ERROR</small>
-                    </div>
-                </div>
-                <div class="right-form-section">
-                    <div class="form-control">
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name">
-                        <i class="fa-sharp fa-solid fa-exclamation"></i>
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                        <small>ERROR</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="phone_number">PHONE NUMBER</label>
-                        <input type="phoneNumber" name="phone_number" id="phone_number">
-                        <i class="fa-sharp fa-solid fa-exclamation"></i>
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                        <small>ERROR</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm_password" id="confirm_password">
-                        <i class="fa-sharp fa-solid fa-exclamation"></i>
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                        <small>ERROR</small>
-                    </div>
-                </div>
-
-
-
-
-            </form>
-        </section>
-        <section class="bottom-section">
-            <button type="submit" form="form">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
-        </section>
-
+        <div class="author">
+          <p>
+            Photo by
+            <a
+              href="https://unsplash.com/@leyy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Leyre</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/71SHXwBLp5w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </p>
+        </div>
+      </div>
+      <section class="top-section">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </section>
+      <section class="middle-section">
+        <h2>Let's do this!</h2>
+        <form class="form" id="form" action="randomPage.com" method="get">
+          <div class="left-form-section">
+            <div class="form-control">
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" name="first_name" id="first_name" />
+              <i class="fa-sharp fa-solid fa-exclamation"></i>
+              <i class="fa-sharp fa-solid fa-check"></i>
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="mail">EMAIL</label>
+              <input type="email" name="mail" id="mail" />
+              <i class="fa-sharp fa-solid fa-exclamation"></i>
+              <i class="fa-sharp fa-solid fa-check"></i>
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" />
+              <i class="fa-sharp fa-solid fa-exclamation"></i>
+              <i class="fa-sharp fa-solid fa-check"></i>
+              <small></small>
+            </div>
+          </div>
+          <div class="right-form-section">
+            <div class="form-control">
+              <label for="last_name">LAST NAME</label>
+              <input type="text" name="last_name" id="last_name" />
+              <i class="fa-sharp fa-solid fa-exclamation"></i>
+              <i class="fa-sharp fa-solid fa-check"></i>
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="phone_number">PHONE NUMBER</label>
+              <input type="phoneNumber" name="phone_number" id="phone_number" />
+              <i class="fa-sharp fa-solid fa-exclamation"></i>
+              <i class="fa-sharp fa-solid fa-check"></i>
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+              />
+              <i class="fa-sharp fa-solid fa-exclamation"></i>
+              <i class="fa-sharp fa-solid fa-check"></i>
+              <small></small>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="bottom-section">
+        <button type="submit" form="form">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </section>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
