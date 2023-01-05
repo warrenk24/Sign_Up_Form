@@ -16,12 +16,18 @@ function checkInputs() {
     const phoneNumber = pNumber.value.trim();
 
     if (passwordValue === "") {
-        errorMessage(password, "*blank password")
+        errorMessage(password, "*Blank password")
 
-    }else if (passwordValue !== confirmedPassword){
-        errorMessage()
-    }else {
+    }
+     else {
         success(password)
+    }
+    if (confirmedPasswordValue === "") {
+        errorMessage(confirmedPassword, "*Blank password")
+    }else if(passwordValue !== confirmedPasswordValue) {
+        errorMessage(confirmedPassword, 'Passwords do not match')
+    }else {
+        success(confirmedPassword)
     }
 
     if (emailValue === "") {
@@ -34,9 +40,9 @@ function checkInputs() {
         success(email)
     }
     if (phoneNumber === ""){
-        errorMessage(pNumber, '*blank phone number')
+        errorMessage(pNumber, '*Blank phone number')
     }else if (!isValidPhoneNumber(phoneNumber)){
-        errorMessage(pNumber, '*invalid phone number')
+        errorMessage(pNumber, '*Invalid phone number')
     }else {
         success(pNumber)
     }
