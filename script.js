@@ -3,6 +3,9 @@ const pNumber = document.getElementById('phone_number')
 const email = document.getElementById('mail');
 const password = document.getElementById('password');
 const confirmedPassword = document.getElementById('confirm_password');
+const firstName = document.getElementById('first_name');
+const lastName = document.getElementById('last_name');
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -10,10 +13,25 @@ form.addEventListener('submit', (e) => {
 })
 
 function checkInputs() {
+    const firstNameValue = firstName.value.trim();
+    const lastNameValue = lastName.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const confirmedPasswordValue = confirmedPassword.value.trim();
     const phoneNumber = pNumber.value.trim();
+    
+    if (firstNameValue === ""){
+        errorMessage(firstName, "*Please enter first name")
+    }else {
+        success(firstName)
+    }
+    if (lastNameValue === ""){
+        errorMessage(lastName, "*Please enter last name")
+    }else {
+        success(lastName)
+    }
+
+
 
     if (passwordValue === "") {
         errorMessage(password, "*Blank password")
